@@ -250,3 +250,12 @@ paket-files/
 # JetBrains Rider
 .idea/
 *.sln.iml
+
+
+#umbraco
+!**/app_data/**/*.sdf
+**/app_data/logs/
+**/app_data/temp/
+**/app_data/models/
+**/app_data/nugetbackup/
+**/app_data/cache/
