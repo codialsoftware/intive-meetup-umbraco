@@ -1,0 +1,30 @@
+header {
+  @include grid-row();
+
+  ul {
+    @include menu-base();
+  }
+}
+
+main[role="main"] {
+  @include clearfix();
+
+  .main__header {
+    @include grid-column-row();
+  }
+}
+
+footer[role="contentinfo"] {
+  @include grid-row();
+
+  background-color: get-color(footer-background-color);
+  margin-top: rem-calc(32);
+  padding-top: rem-calc(16);
+  padding-bottom: rem-calc(16);
+  color: $white;
+
+  > * {
+    @include grid-col();
+  }
+}
+

@@ -55,10 +55,7 @@ function makeWebpackConfig() {
                         {
                             loader: "css-loader",
                             options: {
-                                sourceMap: true,
-                                modules: true,
-                                importLoaders: true,
-                                localIdentName: "[name]__[local]___[hash:base64:5]"
+                                sourceMap: true
                             }
                         },
                         {
@@ -110,7 +107,7 @@ function makeWebpackConfig() {
                 year: new Date().getFullYear()                   //we can pass variables to template and use templates,
                                                                  // by default ejs template is used
             }),
-            new ExtractTextPlugin('css/[name].[contenthash].css')
+            new ExtractTextPlugin(`css/[name].${isProd ? '[contenthash]' : 'bundle'}.css`)
         );
     }
 

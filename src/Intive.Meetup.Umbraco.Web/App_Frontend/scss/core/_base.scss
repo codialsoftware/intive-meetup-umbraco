@@ -1,0 +1,8 @@
+@import "~foundation-sites/scss/foundation";
+@import "~foundation-sites/scss/util/util";
+
+@import "settings";
+@import "layout";
+
+@include foundation-global-styles;
+@include foundation-typography;
