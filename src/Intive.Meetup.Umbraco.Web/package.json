@@ -3,7 +3,10 @@
   "version": "1.0.0",
   "description": "Sample solution to show how to use webpack and other js-based tools and technologies to produce frontend in efficient way",
   "main": "index.js",
-  "dependencies": {},
+  "dependencies": {
+    "foundation-sites": "^6.3.0",
+    "jquery": "^3.1.1"
+  },
   "devDependencies": {
     "autoprefixer": "^6.7.3",
     "babel-core": "^6.23.1",
@@ -12,7 +15,6 @@
     "css-loader": "^0.26.1",
     "extract-text-webpack-plugin": "2.0.0-rc.3",
     "file-loader": "^0.10.0",
-    "foundation-sites": "^6.3.0",
     "html-webpack-plugin": "^2.28.0",
     "istanbul-instrumenter-loader": "^2.0.0",
     "jasmine-core": "^2.5.2",

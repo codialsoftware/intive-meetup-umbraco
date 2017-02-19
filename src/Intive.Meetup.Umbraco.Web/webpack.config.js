@@ -13,7 +13,8 @@ function makeWebpackConfig() {
     const config = {};
 
     config.entry = isTest ? void 0 : {
-        app: ['./App_Frontend/js/app.js', './App_Frontend/scss/app.scss']
+        app: ['./App_Frontend/js/app.js', './App_Frontend/scss/app.scss'],
+        vendors: ['jquery', 'foundation-sites']
     };
 
     config.output = isTest ? {} : {
@@ -96,6 +97,11 @@ function makeWebpackConfig() {
     }
 
     config.plugins = [
+        new webpack.ProvidePlugin({
+            $: 'jquery',
+            jQuery: 'jquery',
+            'window.jQuery': 'jquery'
+        })
     ];
 
     if (!isTest) {
@@ -107,7 +113,10 @@ function makeWebpackConfig() {
                 year: new Date().getFullYear()                   //we can pass variables to template and use templates,
                                                                  // by default ejs template is used
             }),
-            new ExtractTextPlugin(`css/[name].${isProd ? '[contenthash]' : 'bundle'}.css`)
+            new ExtractTextPlugin(`css/[name].${isProd ? '[contenthash]' : 'bundle'}.css`),
+            new webpack.optimize.CommonsChunkPlugin({
+                names: ["vendors", "manifest"],
+            })
         );
     }
 
