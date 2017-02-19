@@ -299,6 +299,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <None Include="App_Plugins\GridEditors\01SimpleGE\SimpleGe.cshtml" />
+    <Content Include="App_Plugins\GridEditors\01SimpleGE\simple-ge-grid-editor.js" />
+    <Content Include="App_Plugins\GridEditors\01SimpleGE\simple-ge-back-office.html" />
     <Content Include="App_Plugins\Grid\Config\FanoeConfig.txt" />
     <Content Include="App_Plugins\Grid\Editors\Views\media_with_description.html" />
     <Content Include="App_Plugins\Grid\Editors\Views\quote_with_description.html" />
@@ -386,6 +389,7 @@
     <Content Include="Views\Partials\BottomNavigation.cshtml" />
     <Content Include="Views\Partials\MainNavigation.cshtml" />
     <Content Include="Views\TextPage.cshtml" />
+    <Content Include="App_Plugins\GridEditors\package.manifest" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -395,8 +399,10 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="App_Plugins\Intive\" />
     <Folder Include="Controllers\" />
     <Folder Include="Models\" />
+    <Folder Include="scripts\app_plugins\" />
   </ItemGroup>
   <ItemGroup>
     <Analyzer Include="..\..\packages\Microsoft.CodeAnalysis.Analyzers.1.0.0\analyzers\dotnet\cs\Microsoft.CodeAnalysis.Analyzers.dll" />
