@@ -4,8 +4,11 @@
   "description": "Sample solution to show how to use webpack and other js-based tools and technologies to produce frontend in efficient way",
   "main": "index.js",
   "dependencies": {},
-  "devDependencies": {},
+  "devDependencies": {
+    "webpack": "^2.2.1"
+  },
   "scripts": {
+    "build": "webpack --bail --progress --profile",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
