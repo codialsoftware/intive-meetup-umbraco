@@ -14,7 +14,10 @@ function makeWebpackConfig() {
 
     config.entry = isTest ? void 0 : {
         app: ['./App_Frontend/js/app.js', './App_Frontend/scss/app.scss'],
-        vendors: ['jquery', 'foundation-sites']
+        vendors: [
+            'jquery',
+            './node_modules/foundation-sites/dist/js/foundation.js'
+        ]
     };
 
     config.output = isTest ? {} : {
@@ -99,8 +102,7 @@ function makeWebpackConfig() {
     config.plugins = [
         new webpack.ProvidePlugin({
             $: 'jquery',
-            jQuery: 'jquery',
-            'window.jQuery': 'jquery'
+            jQuery: 'jquery'
         })
     ];
 

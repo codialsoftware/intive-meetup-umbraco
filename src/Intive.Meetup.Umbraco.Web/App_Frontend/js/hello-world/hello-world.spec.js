@@ -1,10 +1,10 @@
-﻿import HelloWord from './hello-word';
+﻿import HelloWorld from './hello-world';
 
-describe("Given HelloWord class instance and some name", () => {
+describe("Given HelloWorld class instance and some name", () => {
     let sut;
 
     beforeEach(() => {
-        sut = new HelloWord();
+        sut = new HelloWorld();
     });
 
     describe("when name `XYZ` is passed to class", () => {
@@ -14,11 +14,11 @@ describe("Given HelloWord class instance and some name", () => {
     });
 });
 
-describe("Given HelloWord class instance with some greetings word and some name", () => {
+describe("Given HelloWorld class instance with some greetings word and some name", () => {
     let sut;
 
     beforeEach(() => {
-        sut = new HelloWord("Greetings");
+        sut = new HelloWorld("Greetings");
     });
 
     describe("when name `XYZ` is passed to class", () => {

@@ -4,8 +4,8 @@
   "description": "Sample solution to show how to use webpack and other js-based tools and technologies to produce frontend in efficient way",
   "main": "index.js",
   "dependencies": {
-    "foundation-sites": "^6.3.0",
-    "jquery": "^3.1.1"
+    "foundation-sites": "~6.3.0",
+    "jquery": "~2.2.4"
   },
   "devDependencies": {
     "autoprefixer": "^6.7.3",

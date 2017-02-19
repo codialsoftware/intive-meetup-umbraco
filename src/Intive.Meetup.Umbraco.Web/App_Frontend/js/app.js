@@ -1,3 +1,6 @@
-﻿function unusedFunction() {
-    console.info('this file is empty');
-}
+﻿import './foundation-plugins/plugins';
+
+$(() => {
+    $(document).foundation();
+    console.info('Foundation initialized');
+});
