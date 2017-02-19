@@ -302,7 +302,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="App_Frontend\js\app.js" />
-    <Content Include="App_Frontend\js\hello-word\hello-word.dist.js" />
+    <Content Include="App_Frontend\js\hello-word\hello-word.spec.js" />
+    <Content Include="App_Frontend\tests.webpack.js" />
     <Content Include="App_Plugins\Grid\Config\FanoeConfig.txt" />
     <Content Include="App_Plugins\Grid\Editors\Views\media_with_description.html" />
     <Content Include="App_Plugins\Grid\Editors\Views\quote_with_description.html" />
@@ -392,6 +393,7 @@
     <Content Include="Views\TextPage.cshtml" />
     <Content Include="package.json" />
     <Content Include="Views\Templates\_Layout.cshtml" />
+    <Content Include="Views\Sample.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
