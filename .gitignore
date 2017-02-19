@@ -259,3 +259,6 @@ paket-files/
 **/app_data/models/
 **/app_data/nugetbackup/
 **/app_data/cache/
+
+#frontend part
+**/dist/

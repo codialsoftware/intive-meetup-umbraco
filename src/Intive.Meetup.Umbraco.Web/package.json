@@ -1,0 +1,32 @@
+{
+  "name": "intive-umbraco-meetup-frontned",
+  "version": "1.0.0",
+  "description": "Sample solution to show how to use webpack and other js-based tools and technologies to produce frontend in efficient way",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/codialsoftware/intive-meetup-umbraco.git"
+  },
+  "keywords": [
+    "umbraco",
+    "es6",
+    "sass",
+    "bem",
+    "foundation6",
+    "webpack2",
+    "karma",
+    "jasmine",
+    "sample"
+  ],
+  "author": "Intive",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/codialsoftware/intive-meetup-umbraco/issues"
+  },
+  "homepage": "https://github.com/codialsoftware/intive-meetup-umbraco#readme"
+}
