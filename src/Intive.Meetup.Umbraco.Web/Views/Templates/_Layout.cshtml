@@ -1,0 +1,33 @@
+@inherits UmbracoTemplatePage
+@{
+    Layout = null;
+}
+<!doctype html>
+
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <title>The HTML5 Herald</title>
+        <meta name="description" content="Sample page">
+        <meta name="author" content="Intive">
+    </head>
+
+    <body>
+        <header>
+            Header
+        </header>
+
+        <main role="main">
+            <h1>Page Heading</h1>
+            <div class="content">
+                @RenderBody()
+            </div>
+        </main>
+
+        <footer role="contentinfo">
+            <div>Page footer content</div>
+
+            <small>Copyleft &copy; <time datetime="<%= htmlWebpackPlugin.options.year %>"><%= htmlWebpackPlugin.options.year %></time></small>
+        </footer>
+</html>
