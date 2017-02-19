@@ -254,6 +254,7 @@ paket-files/
 
 #umbraco
 !**/app_data/**/*.sdf
+**/app_data/*
 **/app_data/logs/
 **/app_data/temp/
 **/app_data/models/
