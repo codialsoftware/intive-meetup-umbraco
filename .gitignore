@@ -263,3 +263,5 @@ paket-files/
 #frontend part
 /src/Intive.Meetup.Umbraco.Web/dist/
 /src/Intive.Meetup.Umbraco.Web/Views/_Layout.cshtml
+/src/Intive.Meetup.Umbraco.Web/coverage/
+/src/Intive.Meetup.Umbraco.Web/npm-debug.log*
