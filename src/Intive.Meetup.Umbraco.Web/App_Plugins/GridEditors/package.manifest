@@ -1,0 +1,19 @@
+﻿{
+    "gridEditors": [
+        {
+          "name": "01 Simple Grid Editor",
+          "alias": "Intive.GridEditors.Simple01",
+          "icon": "icon-article",
+          "view": "~/App_Plugins/GridEditors/01SimpleGE/simple-ge-back-office.html",
+          "render": "~/App_Plugins/GridEditors/01SimpleGE/SimpleGe.cshtml"
+        },
+
+    ],
+
+    "javascript": [
+        "~/App_Plugins/GridEditors/01SimpleGE/simple-ge-grid-editor.js"
+    ],
+
+    "css": [
+    ]
+}
