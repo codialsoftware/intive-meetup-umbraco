@@ -1,2 +1,16 @@
 /* Go crazy with your own styles here */
 /* EDITOR PROPERTIES - PLEASE DON'T DELETE THIS LINE TO AVOID DUPLICATE PROPERTIES */
+
+
+/**umb_name:custom-button*/
+.custom-button {
+	padding: 6px;
+	background-color: #78C091;
+	border-radius: 50px;
+	color: #FFFFFF;
+}
+
+/**umb_name:custom-button-hover*/
+.custom-button:hover {
+	background-color: #BFDBF7;
+}
