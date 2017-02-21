@@ -228,16 +228,6 @@ html {
 	color: #000;
 }
 
-.light a,
-.light a:visited {
-	color: #f45376 !important;
-}
-
-.light a:hover,
-.light a:visited:hover {
-	text-decoration: underline;
-}
-
 .light a.button {
 	border: 1px solid #000;
 	background: transparent;
