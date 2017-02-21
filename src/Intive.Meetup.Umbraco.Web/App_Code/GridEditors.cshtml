@@ -1,0 +1,36 @@
+﻿@using System.Web.Mvc
+@using System.Web.Mvc.Html
+@using Intive.Meetup.Umbraco.Web.Models
+@using Newtonsoft.Json
+@using HtmlHelper = System.Web.Mvc.HtmlHelper;
+
+@functions
+{
+
+    public class ViewDataContainer : System.Web.Mvc.IViewDataContainer
+    {
+        public ViewDataContainer(System.Web.Mvc.ViewDataDictionary viewData)
+        {
+            ViewData = viewData;
+        }
+
+        public System.Web.Mvc.ViewDataDictionary ViewData { get; set; }
+    }
+}
+
+@helper RenderSimpleGe2(HtmlHelper html, SimpleGEModel model)
+{
+    <section class="grideditor-simplege">
+        <h3 class="grideditor-simplege__header">@model.Header</h3>
+        <p class="grideditor-simplege__description">@model.Description</p>
+    </section>
+}
+
+@helper RenderSimpleGe(HtmlHelper html, dynamic dynamicModel)
+{
+    if (dynamicModel != null)
+    {
+        var model = JsonConvert.DeserializeObject<SimpleGEModel>(dynamicModel.ToString());
+        @RenderSimpleGe2(html, model)
+    }
+}
