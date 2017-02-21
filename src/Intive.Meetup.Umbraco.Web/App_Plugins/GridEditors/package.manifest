@@ -6,11 +6,19 @@
           "icon": "icon-article",
           "view": "~/App_Plugins/GridEditors/01SimpleGE/simple-ge-back-office.html",
           "render": "~/App_Plugins/GridEditors/01SimpleGE/SimpleGe.cshtml"
-        },
-
+        }
     ],
 
     "javascript": [
+        // controllers
+        "~/App_Plugins/Directives/ImagePickerItem/image-picker-item-controller.js",
+        "~/App_Plugins/Directives/ImagePicker/image-picker-controller.js",
+
+        // directives
+        "~/App_Plugins/Directives/ImagePickerItem/image-picker-item-directive.js",
+        "~/App_Plugins/Directives/ImagePicker/image-picker-directive.js",
+
+        // grid editors
         "~/App_Plugins/GridEditors/01SimpleGE/simple-ge-grid-editor.js"
     ],
 

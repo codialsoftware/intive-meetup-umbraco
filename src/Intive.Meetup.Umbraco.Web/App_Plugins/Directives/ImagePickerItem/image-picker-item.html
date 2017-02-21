@@ -1,0 +1,27 @@
+﻿<div class="image-picker-item">
+    <span data-ng-if="controller.model.variant">{{controller.model.variant}}</span>
+
+    <div class="image-placeholder" data-ng-if="!controller.hasImage()">
+        <div class="umb-mediapicker">
+            <a class="add-link" data-ng-click="controller.pickImage()">
+                <i class="icon icon-add large"></i>
+            </a>
+        </div>
+    </div>
+
+    <div class="image-group" data-ng-if="controller.hasImage()">
+        <img data-ng-src="{{controller.model.url}}">
+        <div class="btn-controls">
+            <button id="{{$id}}-pick-image" type="button"
+                    class="btn umb-button__button"
+                    data-ng-click="controller.pickImage()">
+                Change image
+            </button>
+            <button id="{{$id}}-clear-image" type="button"
+                    class="btn umb-button__button btn-clear-image"
+                    data-ng-click="controller.clearImage()">
+                Clear
+            </button>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,22 @@
+﻿<div class="image-picker row-fluid">
+    <image-picker-item class="span4" data-model="controller.model" data-on-clear="controller.onImageClear"></image-picker-item>
+
+    <div class="span7 offset1">
+        <div class="form-horizontal">
+            <div class="control-group">
+                <label for="{{$id}}-img-caption" class="control-label">Image caption</label>
+                <input id="{{$id}}-img-caption" data-ng-model="controller.model.caption" />
+            </div>
+            <div class="control-group">
+                <label for="{{$id}}-img-alt" class="control-label">Image alternative text</label>
+                <input id="{{$id}}-img-alt" data-ng-model="controller.model.alt" />
+            </div>
+        </div>
+    </div>
+
+    <div class="span12 srcset-container" data-ng-if="controller.model.url">
+        <image-picker-item class="span4 srcset-item"
+            data-ng-repeat="element in controller.model.srcset"
+            data-model="element"></image-picker-item>
+    </div>
+</div>

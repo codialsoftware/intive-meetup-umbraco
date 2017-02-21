@@ -1,4 +1,4 @@
-﻿(function(angular) {
+﻿(function(angular, _) {
     'use strict';
 
     angular.module('umbraco').controller(
@@ -16,5 +16,17 @@
 
     function initializePersistence(persistence) {
         persistence.value = persistence.value || {};
+        extend(persistence.value,
+            {
+                image: {}
+            });
     }
-})(angular);
+
+    function extend(destination, source) {
+        for (var item in source) {
+            if (!destination[item]) {
+                destination[item] = source[item];
+            }
+        }
+    }
+})(angular, _);
