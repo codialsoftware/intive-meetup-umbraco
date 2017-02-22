@@ -23,5 +23,6 @@
     ],
 
     "css": [
+        "~/css/backoffice.css"
     ]
 }

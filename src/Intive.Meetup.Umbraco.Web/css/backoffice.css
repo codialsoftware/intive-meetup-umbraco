@@ -1,0 +1,40 @@
+.image-picker {
+  display: block; }
+  .image-picker .srcset-container {
+    padding-top: 20px; }
+    .image-picker .srcset-container .srcset-item {
+      padding: 5px; }
+      .image-picker .srcset-container .srcset-item .umb-cropper-gravity {
+        width: 100%;
+        height: 100%;
+        box-sizing: border-box;
+        text-align: center;
+        border: 2px dashed lightgrey;
+        padding: 5px; }
+        .image-picker .srcset-container .srcset-item .umb-cropper-gravity div.viewport {
+          width: 100%;
+          height: auto;
+          text-align: left; }
+          .image-picker .srcset-container .srcset-item .umb-cropper-gravity div.viewport img {
+            position: static; }
+          .image-picker .srcset-container .srcset-item .umb-cropper-gravity div.viewport div.overlay {
+            position: absolute !important; }
+
+.image-picker-item .image-group .btn-controls .btn {
+  width: 100%; }
+
+.image-picker-item .umb-cropper-gravity {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  text-align: center;
+  border: 2px dashed lightgrey;
+  padding: 5px; }
+  .image-picker-item .umb-cropper-gravity div.viewport {
+    width: 100%;
+    height: 100%;
+    text-align: left; }
+    .image-picker-item .umb-cropper-gravity div.viewport img {
+      position: static; }
+    .image-picker-item .umb-cropper-gravity div.viewport div.overlay {
+      position: absolute !important; }
