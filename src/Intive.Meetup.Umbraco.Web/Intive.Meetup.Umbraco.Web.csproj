@@ -302,7 +302,10 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="App_Frontend\js\app.js" />
-    <Content Include="App_Frontend\js\hello-word\hello-word.spec.js" />
+    <Content Include="App_Frontend\js\foundation-plugins\hello-world.js" />
+    <Content Include="App_Frontend\js\foundation-plugins\plugins.js" />
+    <Content Include="App_Frontend\js\hello-world\hello-world.js" />
+    <Content Include="App_Frontend\js\hello-world\hello-world.spec.js" />
     <Content Include="App_Frontend\tests.webpack.js" />
     <Content Include="App_Plugins\Grid\Config\FanoeConfig.txt" />
     <Content Include="App_Plugins\Grid\Editors\Views\media_with_description.html" />
@@ -394,6 +397,12 @@
     <Content Include="package.json" />
     <Content Include="Views\Templates\_Layout.cshtml" />
     <Content Include="Views\Sample.cshtml" />
+    <Content Include="App_Frontend\scss\app.scss" />
+    <Content Include="App_Frontend\scss\blocks\_base.scss" />
+    <Content Include="App_Frontend\scss\blocks\_hello-world.scss" />
+    <Content Include="App_Frontend\scss\core\_base.scss" />
+    <Content Include="App_Frontend\scss\core\_layout.scss" />
+    <Content Include="App_Frontend\scss\core\_settings.scss" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -409,9 +418,6 @@
   <ItemGroup>
     <Analyzer Include="..\..\packages\Microsoft.CodeAnalysis.Analyzers.1.0.0\analyzers\dotnet\cs\Microsoft.CodeAnalysis.Analyzers.dll" />
     <Analyzer Include="..\..\packages\Microsoft.CodeAnalysis.Analyzers.1.0.0\analyzers\dotnet\cs\Microsoft.CodeAnalysis.CSharp.Analyzers.dll" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="App_Frontend\js\hello-word\hello-word.js" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />

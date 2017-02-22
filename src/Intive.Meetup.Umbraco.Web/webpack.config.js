@@ -13,7 +13,9 @@ function makeWebpackConfig() {
     const config = {};
 
     config.entry = isTest ? void 0 : {
-        app: ['./App_Frontend/js/app.js', './App_Frontend/scss/app.scss'],
+        app: [
+            './App_Frontend/js/app.js',
+            './App_Frontend/scss/app.scss'],
         vendors: [
             'jquery',
             './node_modules/foundation-sites/dist/js/foundation.js'
@@ -28,8 +30,8 @@ function makeWebpackConfig() {
 
     if (isTest) {
         config.devtool = 'inline-source-map';
-    } else if (isTest) {
-        config.devtool = 'source-map';
+    } else if (isProd) {
+        config.devtool = 'cheap-module-source-map';
     } else {
         config.devtool = 'eval-source-map';
     }
